@@ -12,7 +12,15 @@ public class Dept {
     /**
      * 部门说明
      */
-    private String detpRemark;
+    private String deptRemark;
+    
+    public String getDeptRemark() {
+        return deptRemark;
+    }
+    
+    public void setDeptRemark(String deptRemark) {
+        this.deptRemark = deptRemark;
+    }
     
     /**
      * 所属社团
@@ -35,13 +43,7 @@ public class Dept {
         this.deptName = deptName;
     }
     
-    public String getDetpRemark() {
-        return detpRemark;
-    }
     
-    public void setDetpRemark(String detpRemark) {
-        this.detpRemark = detpRemark;
-    }
     
     public Mass getMass() {
         return mass;
