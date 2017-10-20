@@ -14,6 +14,11 @@ public class Dept {
      */
     private String deptRemark;
     
+    /**
+     * 部门负责人
+     */
+    private User user;
+    
     public String getDeptRemark() {
         return deptRemark;
     }
@@ -51,5 +56,13 @@ public class Dept {
     
     public void setMass(Mass mass) {
         this.mass = mass;
+    }
+    
+    public User getUser() {
+        return user;
+    }
+    
+    public void setUser(User user) {
+        this.user = user;
     }
 }

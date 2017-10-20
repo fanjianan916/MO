@@ -15,12 +15,14 @@
     </div>
     <div class="login_body">
         <div class="login_phone">
-            <form id="formId" action="#">
+            <form id="formId" action="#{pageContext.request.contextPath}/login" method="post">
                 <div class="login_input_content">
-                    <input id="phone" class="login_input" type="text" placeholder="请输入MO帐号">
+                    <input id="phone" class="login_input" type="text" placeholder="请输入MO帐号"
+                    name="account">
                 </div>
                 <div class="login_input_content">
-                    <input id="pwd" class="login_input" type="password" placeholder="请输入MO帐号登录密码">
+                    <input id="pwd" class="login_input" type="password" placeholder="请输入MO帐号登录密码"
+                    name="password">
                 </div>
                 <!--短信验证码-->
                 <!--<div class="login_input_content hide" id="sms" style="display: none;">-->
