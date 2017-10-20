@@ -19,9 +19,13 @@ public class SystemManager {
         return "systemManager/sysAuditList";
     }
     
+    /**
+     * 跳转到社团审核页面
+     * 查询数据库中等待审核的社团
+     */
     @RequestMapping("/auditView")
     public String auditView() {
-    
+        
         return "systemManager/sysMassView";
     }
 }

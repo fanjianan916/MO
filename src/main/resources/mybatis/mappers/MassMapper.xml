@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xin.mo.mapper.MassMapper">
+    
+    <insert id="saveMass" parameterType="Mass">
+        INSERT INTO mass (mass_id,
+                          mass_name,
+                          mass_type,
+                          deparment,
+                          teacher,
+                          remark,
+                          reason,
+                          applyTime,
+                          fountTime,
+                          mass_email,
+                          active)
+        VALUES (#{massId},
+            #{massName},
+            #{massType},
+            #{deparment},
+            #{teacher},
+            #{remark},
+            #{reason},
+            #{applyTime, jdbcType=DATE},
+            #{fountTime, jdbcType=DATE},
+            #{massEmail},
+            #{active})
+    </insert>
+    
+    <update id="setActive">
+        UPDATE mass SET active = #{active} WHERE mass_id = #{massId}
+    </update>
+</mapper>

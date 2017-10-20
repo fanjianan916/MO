@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xin.mo.mapper.AccountMapper">
+    
+    <select id="findAccountByAccountAndPassword" resultMap="AccountRM">
+        SELECT *
+        FROM account
+        WHERE account = #{account} AND password = #{password}
+    </select>
+    
+    <resultMap id="AccountRM" type="Account" autoMapping="true">
+        <id column="a_id" property="accountId"/>
+        <association property="user" javaType="User">
+            <id column="u_id" property="userId"/>
+        </association>
+        <association property="mass" javaType="Mass">
+            <id column="mass_id" property="massId"/>
+        </association>
+    </resultMap>
+    
+    <insert id="saveAccount" parameterType="Account">
+        INSERT INTO account(
+        a_id,
+        account,
+        password,
+        identification,
+        u_id,
+        mass_id)
+        VALUES (
+        #{accountId},
+        #{account},
+        #{password},
+        #{identification},
+        <trim suffix="" suffixOverrides=",">
+            <if test="#{user != null}">
+                #{user.userId},
+            </if>
+    
+            <if test="#{mass != null}">
+                #{mass.massId},
+            </if>
+        </trim>
+        
+        )
+    </insert>
+    
+    <select id="findAccountByAccountName" resultType="Account">
+        SELECT * FROM account WHERE account = #{account}
+    </select>
+</mapper>

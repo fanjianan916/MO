@@ -20,9 +20,9 @@ jQuery(function($){
         // 组件
         slide_links        : 'blank',    // 个别环节为每张幻灯片（选项：假的，'民'，'名'，'空'）
         slides             : [    // 幻灯片影像
-                                 {image : 'css/reg/img/1.jpg'},
-                                 {image : 'css/reg/img/2.jpg'},
-                                 {image : 'css/reg/img/3.jpg'}
+                                 {image : 'http://localhost:8090/staticfile/css/reg/img/1.jpg'},
+                                 {image : 'http://localhost:8090/staticfile/css/reg/img/2.jpg'},
+                                 {image : 'http://localhost:8090/staticfile/css/reg/img/3.jpg'}
                        ]
 
     });
