@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 81px;
+    line-height: 78px;
+    background: #fff;
+    border-bottom: 1px solid #ebeef3;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+    float: left;
+}
+
+.navbar .content {
+    position: relative;
+    width: 1180px;
+    height: 81px;
+    margin: 0 auto;
+    /*background: yellowgreen;*/
+    text-align: right;
+}
+
+.navbar .logolink {
+    position: relative;
+    /*float: left;*/
+}
+
+.navbar .logo {
+    vertical-align: middle;
+    position: relative;
+    top: 5px;
+}
+
+.navbar .link {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none !important;
+    /*float: left;*/
+}
+
+.navbar .link:hover {
+    color: #449ffa;
+}
+
+.navbar .link.feature {
+    margin: 0 0 0 180px;
+}
+
+.navbar .reg {
+    position: relative;
+    width: 100px;
+    height: 81px;
+    top: -1px;
+    margin: 0 0 0 80px;
+    background: #3296fa;
+    color: #fff;
+    text-align: center;
+    /*float: left;*/
+}
+
+.navbar .reg:hover {
+    background: #2180e0;
+}
+
+.navbar .login {
+    position: relative;
+    width: 100px;
+    height: 81px;
+    margin: 0 0 0 0;
+    top: -1px;
+    color: #000;
+    text-align: center;
+    border-right: 1px solid #ebeef3;
+}
+
+.navbar .login:hover {
+    background: #fafafa;
+    color: #449ffa;
+}

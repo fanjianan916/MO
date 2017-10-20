@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+.footer a {
+    display: inline-block;
+    color: #646469;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    display: inline-block;
+    color: whitesmoke;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.floor {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background: #fafafa;
+    padding: 140px 0 77px;
+    box-sizing: border-box;
+}
+
+.floor .floor-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-size: 40px;
+    color: #333;
+    top: 60px;
+}
+
+.floor .floor-center {
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.floor .floor-center .floor-center-top {
+    height: 50px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background: #439de2;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.floor .floor-center .floor-center-top .floor-title-left {
+    width: 380px;
+    height: 30px;
+    float: left;
+    border-right: solid 1px #69b1e8;
+    box-sizing: border-box;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.floor .floor-center .floor-center-top .floor-title-right {
+    width: 800px;
+    height: 30px;
+    float: left;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.floor .floor-tab {
+    position: relative;
+    overflow: hidden;
+}
+
+.floor .floor-tab li {
+    position: absolute;
+}
+
+.floor .floor-tab .floor-tab-list {
+    position: relative;
+    width: 1180px;
+    height: 490px;
+}
+
+.floor .floor-tab .tab-list-txt {
+    display: block;
+    width: 380px;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    padding: 30px 40px 0 30px;
+    box-sizing: border-box;
+    background: #fafafa;
+    border: 1px solid #eceef3;
+    font-size: 18px;
+}
+
+.floor-tab-list li:nth-of-type(1) .tab-list-txt {
+    top: 0;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.floor-tab-list li:nth-of-type(2) .tab-list-txt {
+    top: 110px;
+}
+
+.floor-tab-list li:nth-of-type(3) .tab-list-txt {
+    top: 220px;
+}
+
+.floor-tab-list li:nth-of-type(4) .tab-list-txt {
+    top: 330px;
+}
+
+.tab-list-txt .special-txt {
+    color: #2d9afa;
+}
+
+.floor .floor-tab .tab-list-content {
+    position: absolute;
+    left: 380px;
+    top: 0;
+    width: 800px;
+    height: 490px;
+    box-sizing: border-box;
+    border: 1px solid #eceef3;
+    border-left: none;
+    background: #fff;
+}
+
+.floor .floor-tab .tab-list-content .tab-list-content-title {
+    position: absolute;
+    top: 30px;
+    width: 800px;
+    text-align: center;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.floor .floor-tab .tab-list-content .tab-list-detail {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 0 110px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.floor .floor-tab .tab-list-content .tab-list-img-wrap {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+
+.floor .floor-tab .tab-list-content .tab-list-img-wrap img {
+    width: 800px;
+    height: 340px;
+}
+
+.floor-tab-change {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 380px;
+    height: 51px;
+    box-sizing: border-box;
+    border: 1px solid #eceef3;
+    text-align: center;
+    line-height: 51px;
+}
+
+.floor-tab-change a {
+    display: inline-block;
+    color: #2d9afa;
+}
+
+.footer {
+    position: relative;
+    background-color: #303036;
+    color: #fff;
+}
+
+.footer-content {
+    width: 1180px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+.footer .list {
+    position: relative;
+    float: left;
+    width: 200px;
+    text-align: left;
+
+}
+
+.footer .list .title {
+    margin: 45px 0 10px;
+    font-size: 14px;
+}
+
+.footer .list .link {
+    display: block;
+    margin: 15px 0;
+    font-size: 12px;
+    text-decoration: none!important;
+    color: rgba(255,255,255,.3);
+    filter: alpha(opacity=30);
+}
+
+.footer .list .link:hover {
+    color: #fff;
+    filter: alpha(opacity=100);
+}
+
+.footer .bottom .friend {
+    float: left;
+    font-size: 12px;
+    color: rgba(255,255,255,.3);
+}
+
+.footer .list .lg {
+    margin: 45px 0 0;
+    font-size: 24px;
+}
+
+.footer .list .sm {
+    font-size: 12px;
+}
+
+.footer .list .btn {
+    float: right;
+    margin: 20px 0 0;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
